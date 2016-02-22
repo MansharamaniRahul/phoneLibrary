@@ -1,0 +1,20 @@
+[
+{
+	"title":"Home",
+	"state":"home",
+	"navId":"home",
+    "iconSource":"material-design-icons/action/svg/production/ic_home_24px.svg"
+},
+{
+	"title":"Top Rated",
+	"state":"topRated",
+	"navId":"topRated",
+    "iconSource":"material-design-icons/toggle/svg/production/ic_star_24px.svg"
+},
+{
+	"title":"CRUD",
+	"state":"crud",
+	"navId":"crud",
+    "iconSource":"material-design-icons/content/svg/production/ic_send_24px.svg"
+}
+]

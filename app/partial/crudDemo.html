@@ -1,0 +1,43 @@
+<h1>CRUD DEMO</h1>
+
+
+
+<input ng-model="searchFilter" type="text" />
+
+
+<div id="demoDiv" data-ng-repeat="data in contactList | filter: searchFilter" >
+	<div class="phoneContainer md-raised">
+		<p>{{data.name}}</p>		<h5>{{data.number}}</h5>&nbsp;
+		<h5>{{data.email}}</h5>&nbsp;<button class="btn btn-info" ng-click="deleteContact(data._id)">Delete Contact</button>&nbsp;
+		<button class="btn btn-info" ng-click="editContact(data._id)">Edit Contact</button>
+	</div>
+</div>
+
+<!--
+<table name="contactList">
+	<thead>
+		<th>Name</th>
+		<th>Number</th>
+		<th>Email</th>
+		<th>Show Contact</th>
+		<th>Add Contact</th>
+		<th>Edit Contact</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><input type="text" id="name" class="form-control" ng-model="contact.name" placeHolder="Enter Name"/></td>
+			<td><input type="text" class="form-control" ng-model="contact.number" placeHolder="Enter Number"/></td>
+			<td><input type="text" class="form-control" ng-model="contact.email" placeHolder="Enter Email"/></td>
+			<td><button class="btn btn-info" ng-click="showContact()">Show Contact List</button></td>
+			<td><button class="btn btn-info" ng-click="addContact()">Add Contact</button></td>		
+			<td><button class="btn btn-info" ng-click="updateContact(contact._id)">Update Contact</button></td>		
+		</tr>
+		<tr ng-repeat="data in contactList |filter:searchFilter" class="phoneContainer md-raised">
+			<td>{{data.name}}</td>
+			<td>{{data.number}}</td>
+			<td>{{data.email}}</td>
+			<td><button class="btn btn-info" ng-click="deleteContact(data._id)">Delete Contact</button></td>
+			<td><button class="btn btn-info" ng-click="editContact(data._id)">Edit Contact</button></td>
+		</tr>
+	</tbody>
+</table>-->
